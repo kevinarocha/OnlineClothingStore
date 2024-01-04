@@ -6,3 +6,30 @@
     <h1 class="display-4">Welcome Hello World</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+<html>
+<head>
+    <title>Online Shopping</title>
+</head>
+<body>
+
+    <div class="product-card">
+        <!-- Product Image -->
+        <img class="product-image"
+             src="~/img/static-image-url.png"
+             @* onmouseover="changeImage(this, 'hover-image-url.jpg')"
+             onmouseout="changeImage(this, 'static-image-url.jpg')" *@
+             alt="Product Image">
+
+        <!-- Product Name -->
+        <div class="product-title">
+            Product Name
+        </div>
+
+        <!-- Product Price -->
+        <div class="product-price">
+            $XX.XX
+        </div>
+    </div>
+
+</body>
+</html>

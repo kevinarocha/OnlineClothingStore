@@ -20,3 +20,29 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Start of Basic styling for the product card */
+.product-card {
+    width: 250px;
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 400px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.product-price {
+    color: green;
+    text-align: left;
+}
+
+/* End of Basic styling for the product card */
