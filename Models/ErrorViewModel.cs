@@ -1,3 +1,4 @@
+
 namespace OnlineClothingStore.Models
 {
     public class ErrorViewModel
