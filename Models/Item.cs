@@ -13,6 +13,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace OnlineClothingStore.Models
 {
+    [Table("Item")]
     public class Item
     {
         [ScaffoldColumn(false)]

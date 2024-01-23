@@ -1,0 +1,37 @@
+﻿@model List<OnlineClothingStore.Models.Order>;
+
+
+@{
+    //ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+
+
+
+@foreach (var item in Model)
+{
+
+
+    @foreach (var od in item.OrderDetails)
+    {
+        <li> Order Price: @od.UnitPrice</li>
+    }
+
+   @*  <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item)
+        </td>
+        <td>
+             @Html.DisplayFor(modelItem=> item.Items.ItemId) 
+        </td>
+        <td>
+             @Html.DisplayFor(modelItem=> item.Items) 
+        </td>
+        <td>
+         @Html.ActionLink("Edit","Edit", new{id= item.CategoryId})
+            @Html.ActionLink("Details","Details", new{id= item.CategoryId})
+            @Html.ActionLink("Delete","Delete", new{id= item.CategoryId}) 
+        </td>
+    </tr> *@
+
+}

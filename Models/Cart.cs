@@ -8,7 +8,7 @@ using System.Web;
 
 namespace OnlineClothingStore.Models
 {
-
+    [Table("Cart")]
     public class Cart
     {
         [Key]

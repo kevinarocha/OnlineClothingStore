@@ -6,6 +6,7 @@ using System.Web;
 
 namespace OnlineClothingStore.Models
 {
+    [Table("Category")]
     public class Category
     {
         public int CategoryId { get; set; }

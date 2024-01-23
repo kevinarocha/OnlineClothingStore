@@ -1,0 +1,25 @@
+﻿@model OnlineClothingStore.Models.Item;
+
+<html>
+<head>
+    <title>Search Result</title>
+</head>
+<body>
+ @*    @if (Model != null)
+    {
+    } *@
+    @{
+        <h2>Model found for ID @Model.Title</h2>
+        <h2>Price @Model.Price</h2>
+        <h2> Category for Item:  @Model.Category</h2>
+        <!-- Display other properties of the model as needed -->
+    }
+
+
+     <!-- <h1>ID: ViewBag.Id</h1> -->
+@*     else
+    {
+        <h2>Model not found for the specified ID</h2>
+    } *@
+</body>
+</html>

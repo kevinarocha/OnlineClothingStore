@@ -8,6 +8,7 @@ using System.Web;
 
 namespace OnlineClothingStore.Models
 {
+    [Table("OrderDetail")]
     public class OrderDetail
     {
         public int OrderDetailId { get; set; }

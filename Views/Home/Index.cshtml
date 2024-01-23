@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<OnlineClothingStore.Models.Item>;
+
+@{
     Layout = null;
 }
 
@@ -357,6 +359,43 @@
                                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                             </ul>
                                             <p class="discount-text">SUMMER SALE! 10% off student discount</p>
+
+                                       <div class="container px-4 px-lg-5">
+                            <div class="row gx-4 gx-lg-5">
+                                <div class="col">
+                                    <p>
+                    <a id="adminPills" class="btn btn-outline-primary text-decoration-none"
+                       asp-controller="Category"
+                       asp-action="PrintList"><i class="far fa-folder-open"></i> Category Controller</a>
+                            </p>
+                        </div>
+                    </div>
+
+
+                     <div class="row gx-4 gx-lg-5">
+                                <div class="col">
+                                    <p>
+                    <a id="adminPills" class="btn btn-outline-primary text-decoration-none"
+                       asp-controller="Item"
+                       asp-action="PrintList"><i class="far fa-folder-open"></i> Item controller</a>
+                            </p>
+                        </div>
+                    </div>
+
+
+                                                <div class="row gx-4 gx-lg-5">
+                                                    <div class="col">
+                                                        <p>
+                                                            <a id="adminPills" class="btn btn-outline-primary text-decoration-none"
+                                                               asp-controller="Order"
+                                                               asp-action="PrintList"><i class="far fa-folder-open"></i> Order controller</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                </div>
+
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -427,12 +466,14 @@
                                 <h2>Sale Off</h2>
                             </div>
                             <div class="product-carousel">
+
+                                @foreach(var item in Model){
                                 <div class="slide-item">
                                     <!--item 1 start-->
                                     <div class="single-product-item">
                                         <div class="sale-product-label"><span>sale</span></div>
                                         <div class="single-product clearfix">
-                                            <a href="#">
+                                            <a href="#"> 
                                                 <span class="product-image">
                                                     <img src="~/img/product/1.jpg" alt="">
                                                 </span>
@@ -444,10 +485,13 @@
                                                 </div>
                                             </a>
                                         </div>
-                                        <h2 class="single-product-name"><a href="#">Aliquam consequat</a></h2>
+                                         @* <h2 class="single-product-name"><a href="@Url.Action("PrintItemInfo", "Item" , new {data = item.ItemId})"> @item.Title </a>  </h2> *@
+                                            <h2 class="single-product-name"><a href="/Item/PrintItemInfo?id=@item.ItemId"> @item.Title </a></h2>
+                                        @* <a href="@Url.Action("YourAction", "YourController", new { id = "yourDataValue" })">Go to YourAction</a> *@
+
                                         <div class="price-box">
                                             <p class="old-price">
-                                                <span class="price">$999.00</span>
+                                                <span class="price">$@item.Price</span>
                                             </p>
                                             <p class="special-price">
                                                 <span class="price">$944.00</span>
@@ -456,8 +500,11 @@
                                     </div>
                                     <!--end of item 1-->
                                 </div>
+                                }
+
+
                                 <!--end of col-md-3-->
-                                <div class="slide-item">
+                                @* <div class="slide-item">
                                     <!--item 2 start-->
                                     <div class="single-product-item">
                                         <div class="sale-product-label"><span>sale</span></div>
@@ -485,9 +532,9 @@
                                         </div>
                                     </div>
                                     <!--end of item 2-->
-                                </div>
+                                </div> *@
                                 <!--end of col-md-3-->
-                                <div class="slide-item">
+                                @* <div class="slide-item">
                                     <!--item 3 start-->
                                     <div class="single-product-item">
                                         <div class="sale-product-label"><span>sale</span></div>
@@ -515,9 +562,9 @@
                                         </div>
                                     </div>
                                     <!--end of item 3-->
-                                </div>
+                                </div> *@
                                 <!--end of col-md-3-->
-                                <div class="slide-item">
+                                @* <div class="slide-item">
                                     <!--item 4 start-->
                                     <div class="single-product-item">
                                         <div class="sale-product-label"><span>sale</span></div>
@@ -545,9 +592,9 @@
                                         </div>
                                     </div>
                                     <!--end of item 4-->
-                                </div>
+                                </div> *@
                                 <!--end of col-md-3-->
-                                <div class="slide-item">
+                                @* <div class="slide-item">
                                     <!--item 5 start-->
                                     <div class="single-product-item">
                                         <div class="sale-product-label"><span>sale</span></div>
@@ -575,9 +622,9 @@
                                         </div>
                                     </div>
                                     <!--end of item 5-->
-                                </div>
+                                </div> *@
                                 <!--end of col-md-3-->
-                                <div class="slide-item">
+                                @* <div class="slide-item">
                                     <!--item 6 start-->
                                     <div class="single-product-item">
                                         <div class="sale-product-label"><span>sale</span></div>
@@ -605,9 +652,25 @@
                                         </div>
                                     </div>
                                     <!--end of item 6-->
-                                </div>
+                                </div> *@
                                 <!--end of col-md-3-->
                             </div>
+
+
+
+                            <!-- End of Carosel-->
+
+
+
+
+
+
+
+
+
+
+
+
                         </div>
                     </div>
                 </div>

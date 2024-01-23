@@ -5,6 +5,7 @@ using System.ComponentModel;
 
 namespace OnlineClothingStore.Models
 {
+    [Table("Order")]
     public class Order
     {
 
