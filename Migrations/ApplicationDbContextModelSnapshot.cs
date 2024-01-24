@@ -282,6 +282,11 @@ namespace OnlineClothingStore.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("integer");
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(350)
+                        .HasColumnType("character varying(350)");
+
                     b.Property<string>("ItemArtUrl")
                         .IsRequired()
                         .HasMaxLength(1024)
