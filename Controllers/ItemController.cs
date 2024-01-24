@@ -48,7 +48,45 @@ namespace OnlineClothingStore.Controllers
             return View(foundModel);
         }
 
+        public ActionResult MensHomepage()
+        {
+            List<Item> items = _context.Items.ToList();
 
+            return View(items);
+        }
 
+        public ActionResult MensShirts()
+        {
+            List<Item> items = _context.Items.ToList();
+
+            return View(items);
+        }
+
+        public ActionResult MensPants()
+        {
+            List<Item> items = _context.Items.ToList();
+
+            return View(items);
+        }
+
+        public ActionResult WomensHomepage()
+        {
+            List<Item> items = _context.Items.ToList();
+
+            return View(items);
+        }
+
+        public ActionResult WomensShirts()
+        {
+            List<Item> items = _context.Items.ToList();
+
+            return View(items);
+        }
+        public ActionResult WomensPants()
+        {
+            List<Item> items = _context.Items.ToList();
+
+            return View(items);
+        }
     }
 }

@@ -25,6 +25,8 @@
   <ItemGroup>
     <Folder Include="Data\Migrations\" />
     <Folder Include="Migrations\" />
+    <Folder Include="Views\Men\" />
+    <Folder Include="Views\Women\" />
   </ItemGroup>
 
 </Project>
