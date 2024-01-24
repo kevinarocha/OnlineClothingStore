@@ -216,6 +216,7 @@ namespace OnlineClothingStore.Migrations
                     CategoryId = table.Column<int>(type: "integer", nullable: false),
                     ProducerId = table.Column<int>(type: "integer", nullable: false),
                     Title = table.Column<string>(type: "character varying(160)", maxLength: 160, nullable: false),
+                    Description = table.Column<string>(type: "character varying(350)", maxLength: 350, nullable: false),
                     Price = table.Column<decimal>(type: "numeric", nullable: false),
                     ItemArtUrl = table.Column<string>(type: "character varying(1024)", maxLength: 1024, nullable: false)
                 },

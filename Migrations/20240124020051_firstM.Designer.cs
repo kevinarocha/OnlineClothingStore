@@ -12,7 +12,7 @@ using OnlineClothingStore.Data;
 namespace OnlineClothingStore.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240123232913_firstM")]
+    [Migration("20240124020051_firstM")]
     partial class firstM
     {
         /// <inheritdoc />
@@ -284,6 +284,11 @@ namespace OnlineClothingStore.Migrations
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("integer");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(350)
+                        .HasColumnType("character varying(350)");
 
                     b.Property<string>("ItemArtUrl")
                         .IsRequired()

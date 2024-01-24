@@ -25,6 +25,9 @@ namespace OnlineClothingStore.Models
         [Required(ErrorMessage = "An Item title is required")]
         [StringLength(160)]
         public string Title { get; set; }
+        [Required(ErrorMessage = "An Item description is required")]
+        [StringLength(350)]
+        public string Description { get; set; }
         [Required(ErrorMessage = "Price is required")]
         [Range(0.1, 1000000, ErrorMessage = "price Must be between 0.1 and 100")]
         public decimal Price { get; set; }
