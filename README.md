@@ -9,10 +9,8 @@ Online Clothing Store gives buyers the power to buy shirts and pants for men and
 * Run migrations to your accustomed database
 * Create an account to be able to store individual information for each shopping cart
 
-Basic Features
-Online Clothing Store uses 
 
 
-Authors:
-Kevin Rocha - Full stack development
-Scarllette Rocha - Full stack development
+# Development Team:
+* Kevin Rocha - Full stack development
+* Scarllette Rocha - Full stack development
